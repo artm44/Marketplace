@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Marketplace
+build_property.RootNamespace = Marketplace
+build_property.ProjectDir = D:\Учёба\ИТМО\ООП\Marketplace\Marketplace\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Учёба\ИТМО\ООП\Marketplace\Marketplace
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/ProductInStore/AddProductsInStore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEluU3RvcmVcQWRkUHJvZHVjdHNJblN0b3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/ProductInStore/BuyProductsInStore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEluU3RvcmVcQnV5UHJvZHVjdHNJblN0b3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/ProductInStore/GetBestStoreForProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEluU3RvcmVcR2V0QmVzdFN0b3JlRm9yUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/ProductInStore/GetBestStoreForProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEluU3RvcmVcR2V0QmVzdFN0b3JlRm9yUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/ProductInStore/GetProductInStoresByName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEluU3RvcmVcR2V0UHJvZHVjdEluU3RvcmVzQnlOYW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/ProductInStore/GetProductsForAmount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEluU3RvcmVcR2V0UHJvZHVjdHNGb3JBbW91bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/ProductInStore/GetProductsInStoreByName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEluU3RvcmVcR2V0UHJvZHVjdHNJblN0b3JlQnlOYW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Product/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Product/GetProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxHZXRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Product/GetProductByName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxHZXRQcm9kdWN0QnlOYW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Product/GetProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxHZXRQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Store/CreateStore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcQ3JlYXRlU3RvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Store/GetStore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcR2V0U3RvcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Store/GetStoreByName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcR2V0U3RvcmVCeU5hbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Store/GetStores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcR2V0U3RvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Учёба/ИТМО/ООП/Marketplace/Marketplace/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3d326rv7ui

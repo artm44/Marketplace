@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<ol class="containier">
+     <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Store" asp-action="GetStores">Stores</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Store" asp-action="CreateStore">Create store</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="GetProducts">Products</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="CreateProduct">Create product</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="ProductInStore" asp-action="AddProductsInStore">Add products in store</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="ProductInStore" asp-action="GetBestStoreForProduct">Get best store for product</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="ProductInStore" asp-action="GetBestStoreForProducts">Best store for products</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="ProductInStore" asp-action="GetProductsForAmount">Products for amount</a>
+    </li>
+    <li class="my_item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="ProductInStore" asp-action="BuyProductsInStore">Buy products</a>
+    </li>
+</ol>
+
+<style>
+    .containier{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: max-content;
+        grid-gap:40px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family:  "Segoe UI",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .my_item{
+        margin: auto;
+        width: 90%;
+        header: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-radius: 0.4em;
+        box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        text-align: center;
+        list-style:none;
+    }
+</style>

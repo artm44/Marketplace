@@ -1,0 +1,17 @@
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\bin\Debug\net8.0\Marketplace.Service.deps.json
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\bin\Debug\net8.0\Marketplace.Service.dll
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\bin\Debug\net8.0\Marketplace.Service.pdb
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\bin\Debug\net8.0\Marketplace.DAL.dll
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\bin\Debug\net8.0\Marketplace.Domain.dll
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\bin\Debug\net8.0\Marketplace.DAL.pdb
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\bin\Debug\net8.0\Marketplace.Domain.pdb
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.csproj.AssemblyReference.cache
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.AssemblyInfoInputs.cache
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.AssemblyInfo.cs
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.csproj.CoreCompileInputs.cache
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.csproj.CopyComplete
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.dll
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\refint\Marketplace.Service.dll
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\Marketplace.Service.pdb
+D:\Учёба\ИТМО\ООП\Marketplace\Marketplace.Service\obj\Debug\net8.0\ref\Marketplace.Service.dll

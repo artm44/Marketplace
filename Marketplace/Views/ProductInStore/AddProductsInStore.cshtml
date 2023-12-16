@@ -1,0 +1,139 @@
+﻿@model List<Marketplace.Domain.ViewModels.ProductInStore.ProductInStoreViewModel>
+
+@if (ViewBag.Result != null)
+{   
+    @if (ViewBag.Result == true){
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">Товары успешно добавлены</div>
+    } else
+    {
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">Товары не добавлены :c</div>
+    }
+}
+else
+{
+    <h2>Добавить товар в магазин</h2>
+
+    @using (Html.BeginForm("AddProductsInStore", "ProductInStore", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+                <div class="storeBLock">
+                <label>Название магазина</label>
+                    <input type="text" name="productInStoreViewModel[0].Name_store" />
+                </div>
+                <div id="productsBlock">
+                    <div class="productItem">
+                        <h4>Товар № 1</h4>
+                        <div>
+                            <label>Название</label>
+                            <div>
+                                <input type="text" name="productInStoreViewModel[0].Name_product" />
+                            </div>
+                            <label>Количество</label>
+                            <div>
+                                <input type="number" name="productInStoreViewModel[0].Quantity"/>
+                            </div>
+                            <label>Установить цену</label>
+                            <div>
+                                <input type="checkbox" id="changePrice_0" class="checkBox" checked="true"/>
+                            </div>
+                                <label id="label_price_0">Цена</label>
+                            <div>
+                                <input type="number" id="price_0" name="productInStoreViewModel[0].Price" step="0.01" value="0"/>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <p><a class="addLink">Еще один товар</a></p>
+                <p><input type="submit" value="Добавить" /></p>
+    }
+}
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+<script>
+
+    $(function () {
+        var i = 0;
+        $('.addLink').click(function()
+        {
+            i++;
+                var html2Add= "<div class='productItem'>"+
+        "<h4>Товар № "+(i+1) + "</h4>"+
+        "<div><label>Название</label><div>"+
+            "<input type='text' name='productInStoreViewModel["+i+"].Name_product' />"+
+            "</div><label>Количество</label><div>" + 
+            "<input type='text' name='productInStoreViewModel["+i+"].Quantity' />"+
+            "</div><label>Установить цену</label><div>"+
+            "<input type='checkbox' id='changePrice_"+i+"' class='checkBox' checked='true'/>"+
+            "</div><label id='label_price_"+i+"'>Цена</label><div>" +
+                "<input type='text' id='price_"+i+"' name='productInStoreViewModel["+i+"].Price' step='0.01' value='0'/>"+
+                "</div></div></div>";
+            $('#productsBlock').append(html2Add);
+            $(function () {
+            $('.checkBox').change(function(){
+                var target = document.getElementById('price_'+this.id.split('_')[1])
+                document.getElementById('label_price_'+this.id.split('_')[1]).hidden = !(this.checked);
+                target.hidden=!(this.checked);
+                target.value= (!this.checked) ? -1 : 0;
+                })
+            })
+        })
+        $('.checkBox').change(function(){
+            var target = document.getElementById('price_'+this.id.split('_')[1])
+                document.getElementById('label_price_'+this.id.split('_')[1]).hidden = !(this.checked);
+                target.hidden=!(this.checked);
+                target.value= (!this.checked) ? -1 : 0;
+        })
+    })
+</script>
+}
+
+<style>
+
+    body{
+        font-family:  "Segoe UI",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+    }
+    #productsBlock{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:40px;
+        margin-bottom: 10px;
+    }
+    .productItem{
+        margin: auto;
+        margin-top: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10px;
+        border-radius: 0.3em;
+        background-color: none;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    input{
+        border-radius: 0.3em;
+        border: solid 1px rgba(0,0,0,0.3);
+        border-bottom: solid 2px rgba(0,0,0,0.3);
+        outline: none;
+        &:focus{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-bottom: solid 2px rgba(0,0,0,0.5);
+            box-shadow: 0 0 4px rgba(0,0,0,0.3);
+        }
+    }
+    h4{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .storeBlock{
+        width: 100vw;
+        height: 40px;
+        box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+    }
+</style>

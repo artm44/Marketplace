@@ -1,0 +1,115 @@
+﻿@model List<Marketplace.Domain.ViewModels.Product.SetProductsViewModel>
+@if (ViewBag.status != null)
+{   @if(ViewBag.status == true)
+    {
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">
+            <h4>Продукты куплены!</h4>
+            <h5>Итоговая цена: @ViewBag.Result</h5>
+        </div>
+    }else
+    {
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">
+            <h4>Что-то пошло не так! :c</h4>
+        </div>
+    }
+}else
+{
+    <h2>Покупка товаров</h2>
+
+    @using (Html.BeginForm("BuyProductsInStore", "ProductInStore", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+                <div class="storeBLock">
+                <label>Название магазина</label>
+                    <input type="text" name="storeName" />
+                </div>
+                <div id="productsBlock">
+                    <div class="productItem">
+                        <h4>Товар № 1</h4>
+                        <div>
+                            <label>Название</label>
+                            <div>
+                                    <input type="text" name="products[0].Name" />
+                            </div>
+                            <label>Количество</label>
+                            <div>
+                                    <input type="number" name="products[0].Quantity"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p><a class="addLink">Добавить товар</a></p>
+                <p><input type="submit" value="Купить" /></p>
+    }
+}
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+
+@section Scripts {
+           <script>
+
+               $(function () {
+                   var i = 0;
+                   $('.addLink').click(function()
+                   {
+                       i++;
+                           var html2Add= "<div class='productItem'>"+
+                    "<h4>Товар № "+(i+1) + "</h4>"+
+                    "<div><label>Название</label><div>"+
+                            "<input type='text' name='products["+i+"].Name' />"+
+                        "</div><label>Количество</label><div>" + 
+                            "<input type='text' name='products["+i+"].Quantity' />"+
+                            "</div></div></div>";
+                       $('#productsBlock').append(html2Add);
+                   })
+               })
+            </script>
+}
+
+
+<style>
+    body{
+        font-family:  "Segoe UI",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+    }
+    #productsBlock{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:40px;
+        margin-bottom: 10px;
+    }
+    .productItem{
+        margin: auto;
+        margin-top: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10px;
+        border-radius: 0.3em;
+        background-color: none;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    input{
+        border-radius: 0.3em;
+        border: solid 1px rgba(0,0,0,0.3);
+        border-bottom: solid 2px rgba(0,0,0,0.3);
+        outline: none;
+        &:focus{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-bottom: solid 2px rgba(0,0,0,0.5);
+            box-shadow: 0 0 4px rgba(0,0,0,0.3);
+        }
+    }
+    h4{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .storeBlock{
+        width: 100vw;
+        height: 40px;
+        box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+    }
+</style>                            

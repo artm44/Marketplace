@@ -1,0 +1,107 @@
+﻿@model List<Marketplace.Domain.ViewModels.Product.SetProductsViewModel>
+
+@if (ViewBag.Status != null)
+{  
+    @if (ViewBag.Status == true){
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">
+        <h4>Лучший магазин:</h4><h5>@ViewBag.Store</h5><br>
+        <h4>Стоимость:</h4><h5>@ViewBag.Price</h5><br>
+         </div>
+    } else
+    {       
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">Не найдено :c </div>        
+    }
+}
+else
+{
+    <h2>Поиск наилучшего магазина для товаров</h2>
+
+    @using (Html.BeginForm("GetBestStoreForProducts", "ProductInStore", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+            <div id="productsBlock">
+                <div class="productItem">
+                    <h4>Товар № 1</h4>
+                    <div>
+                        <label>Название</label>
+                        <div>
+                            <input type="text" name="Products[0].Name" />
+                        </div>
+                        <label>Количество</label>
+                        <div>
+                            <input type="text" name="Products[0].Quantity" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p><a class="addLink">Добавить новый элемент</a></p>
+            <p><input type="submit" value="Найти" /></p>
+}
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+@section Scripts {
+       <script>
+           $(function () {
+               var i = 0;
+               $('.addLink').click(function()
+               {
+                   i++;
+                       var html2Add= "<div class='productItem'>"+
+                "<h4>Товар № "+(i+1) + "</h4>"+
+                "<div><label>Название</label><div>"+
+                "<input type='text' name='Products["+i+"].Name' />"+
+                    "</div><label>Количество</label><div>" + 
+                "<input type='text' name='Products["+i+"].Quantity' />"
+                        "</div></div></div>";
+                   $('#productsBlock').append(html2Add);
+               })
+           })
+        </script>
+    }
+}
+
+<style>
+
+    body{
+        font-family:  "Segoe UI",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+    }
+    #productsBlock{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:40px;
+        margin-bottom: 10px;
+    }
+    .productItem{
+        margin: auto;
+        margin-top: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10px;
+        border-radius: 0.3em;
+        background-color: none;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    input{
+        border-radius: 0.3em;
+        border: solid 1px rgba(0,0,0,0.3);
+        border-bottom: solid 2px rgba(0,0,0,0.3);
+        outline: none;
+        &:focus{
+            border: solid 1px rgba(0,0,0,0.5);
+            border-bottom: solid 2px rgba(0,0,0,0.5);
+            box-shadow: 0 0 4px rgba(0,0,0,0.3);
+        }
+    }
+    h4{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .storeBlock{
+        width: 100vw;
+        height: 40px;
+        box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+    }
+</style>

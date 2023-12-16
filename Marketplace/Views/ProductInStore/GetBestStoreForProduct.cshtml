@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model string
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@{
+    var textTitle = "Поиск лучшего магазина";
+}
+@if (ViewBag.Status != null)
+{  
+    @if (ViewBag.Status == true){
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">
+        <h4>Лучший магазин:</h4><h5>@ViewBag.Store</h5><br>
+        <h4>Стоимость:</h4><h5>@ViewBag.Price</h5><br>
+         </div>
+    } else
+    {       
+        <div class="result display-4" style="margin:auto; margin-bottom:20px; text-align:center;">Не найдено :c </div>        
+    }
+}
+else{
+    @using (Html.BeginForm("GetBestStoreForProduct", "ProductInStore", FormMethod.Post))
+    {
+        <input type="text" name="name" placeholder="Введите название продутка" />
+        <input type="submit" value="Submit" />
+    }
+}
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
